@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ThreeJS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn">×</a>
+        <a class="task">1. WebGL Modeling: Triangle</a>
+        <a class="task">2. WebGL Modeling: Table</a>
+        <a class="task">3. Newton Cradle</a>
+        <a class="task">4. Model Loader</a>
+    </div>
+
+    <section id="loading-screen">
+        <span class="center" id="loading-percent"></span>
+        <div id="loader">
+
+        </div>
+    </section>
+
+    <div id="main">
+        <button class="openbtn">☰ </button>
+    </div>
+
+    <div id="info">Newton Cradle</div>
+
+    <canvas id="threejs-canvas" onmousedown="return false" unselectable="on"></canvas>
+
+    <a id="audio" class="float">
+        <div class="tooltip">
+            <i class="fas fa-volume-mute my-float" id="audio-icon"></i>
+            <span class="tooltiptext">Unmute (M)</span>
+        </div>
+    </a>
+
+    <a id="pause" class="float">
+        <div class="tooltip">
+            <i class="fa fa-pause my-float" id="pause-icon"></i>
+            <span class="tooltiptext">Pause (P)</span>
+        </div>
+    </a>
+
+    <a id="screenshot" class="float">
+        <div class="tooltip">
+            <i class="fa fa-camera my-float"></i>
+            <span class="tooltiptext">Screenshot (C)</span>
+        </div>
+    </a>
+
+    <a id="source-link" class="float">
+        <div class="tooltip">
+            <i class="fa fa-code my-float"></i>
+            <span class="tooltiptext">Source code</span>
+        </div>
+    </a>
+
+    <script type="module" src="client.js"></script>
+</body>
+
+</html>
